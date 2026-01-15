@@ -98,6 +98,9 @@ function App() {
             <p className="text-neutral-400 text-lg sm:text-xl max-w-lg mx-auto font-bold uppercase tracking-widest">
               Kanawha County Police | Fire | EMS
             </p>
+            <p className="text-neutral-600 text-xs font-mono uppercase tracking-widest pt-2">
+              v2026.01.15.1540
+            </p>
           </div>
         </header>
 
