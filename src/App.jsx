@@ -43,6 +43,12 @@ function App() {
       if (aExact && !bExact) return -1;
       if (!aExact && bExact) return 1;
 
+      // If both are exact matches, prioritize MAKES over MODELS
+      if (aExact && bExact) {
+        if (a.type === 'make' && b.type !== 'make') return -1;
+        if (a.type !== 'make' && b.type === 'make') return 1;
+      }
+
       // --- PRIORITY 2: STARTS WITH CODE ---
       // If one code actually starts with the query and the other doesn't (it's just a name match)
       const aCodeStart = aCode.startsWith(lowerQuery);
