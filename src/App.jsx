@@ -96,7 +96,7 @@ function App() {
               <span className="text-red-600">VMO</span> Lookup
             </h1>
             <p className="text-neutral-600 text-xs font-mono uppercase tracking-widest pt-2">
-              v2026.01.15.1540
+              v2026.01.16.0747
             </p>
           </div>
         </header>
@@ -109,7 +109,7 @@ function App() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="ENTER CODE (0AKL) OR NAME..."
+              placeholder="ENTER VMO OR MAKE..."
               className="w-full bg-neutral-900/95 backdrop-blur-xl text-xl sm:text-3xl p-5 sm:p-7 pl-14 sm:pl-20 rounded-md border border-neutral-700 shadow-2xl placeholder:text-neutral-600 focus:outline-none focus:border-red-500 text-white font-black uppercase tracking-wider transition-all"
               autoFocus
             />
